@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Alison Christian, Gabriel Ferreira" />
+    <meta name="keywords" content="system login with php" />
+    <meta name="description" content="Sistema de login com PHP" />
+
+    <link rel="stylesheet" type="text/css" href="assets\css\main.css">
+    </link>
+
+    <script src="https://kit.fontawesome.com/7974d9d101.js" crossorigin="anonymous"></script>
+
+    <title>Logar | Sistema de login</title>
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <form method="post" action="bd_login.php">
+
+            <div class="description">
+                <h1>FAZER LOGIN</h1>
+                <hr />
+                <h2>Insira seu e-mail e sua senha para entrar no sistema.</h2>
+            </div>
+
+            <div>
+
+                <!-- Nome da variável: EmailDoUsuario -->
+                <input required type="email" class="dark" name="EmailDoUsuario" placeholder="Digite o seu e-mail">
+
+            </div>
+
+            <div>
+
+                <!-- Nome da variável: SenhaDoUsuario -->
+                <input required class="dark" type="password" name="SenhaDoUsuario" placeholder="Digite a senha">
+
+            </div>
+
+            <div>
+
+                <input type="submit" style="font-weight: 800;" class="dark" value="LOGIN" />
+                <a href="index.php"><button type="button" class="btn btn-secondary">Voltar ao início </button></a>
+
+            </div>
+
+        </form> <!-- Fim do formulário -->
+
+    </div>
+
+</body>
+
+</html>

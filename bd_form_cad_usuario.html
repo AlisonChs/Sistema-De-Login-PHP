@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Alison Christian" />
+    <meta name="keywords" content="system login with php" />
+    <meta name="description" content="Sistema de login com PHP" />
+
+    <link rel="stylesheet" type="text/css" href="assets\css\main.css">
+    </link>
+
+    <script src="https://kit.fontawesome.com/7974d9d101.js" crossorigin="anonymous"></script>
+
+    <title>Cadastrar | Sistema de login</title>
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div style="margin-top: 20%; margin-bottom: 5%;">
+            <h1>Cadastro</h1>
+            <h2>Preencha as informações abaixo para se cadastrar no sistema.</h2>
+            <hr />
+        </div>
+
+        <form method="post" action="bd_inserir_usuario.php">
+
+            <div class="flex-column">
+
+                <label class="dark"> Seu nome e sobrenome </label>
+
+                <div>
+
+                    <!-- Nome da variável: NomeDoUsuario -->
+                    <input required class="dark" type="text" name="NomeDoUsuario" placeholder="João">
+
+                    <!-- Nome da variável: SobrenomeDoUsuario -->
+                    <input class="dark" type="text" name="SobrenomeDoUsuario" placeholder="da Silva">
+
+                </div>
+
+            </div>
+
+            <hr />
+
+            <div class="flex-column">
+
+                <label class="dark"> Seu e-mail e senha favorita </label>
+
+                <div>
+
+                    <!-- Nome da variável: EmailDoUsuario -->
+                    <input required class="dark" type="email" name="EmailDoUsuario" placeholder="joao123@gmail.com">
+
+                    <!-- Nome da variável: SenhaDoUsuario -->
+                    <input class="dark" type="password" name="SenhaDoUsuario" placeholder="joao123">
+
+                </div>
+
+            </div>
+
+            <hr />
+
+            <div class="flex-column">
+
+                <label class="dark"> Seu número de celular </label>
+
+                <div>
+
+                    <!-- Nome da variável: CelularDoUsuario -->
+                    <input class="dark" type="text" name="CelularDoUsuario" placeholder="(01) 2345-6789">
+
+                </div>
+
+            </div>
+
+            <hr />
+
+            <div class="flex-column">
+
+                <label class="dark"> Sua data de nascimento </label>
+
+                <div>
+
+                    <!-- Nome da variável: NascimentoDoUsuario -->
+                    <input class="dark" type="date" name="NascimentoDoUsuario">
+
+                </div>
+
+            </div>
+
+            <div style="margin-top: 15%; margin-bottom: 20%;">
+                <input style="font-weight: 800; " class="dark" type="submit" value="CADASTRAR" />
+                <a href="index.php"><button type="button" class="btn btn-secondary">Voltar ao início </button></a>
+            </div>
+
+        </form> <!-- Fim do formulário -->
+
+    </div>
+
+</body>
+
+</html>
